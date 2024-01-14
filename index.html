@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/weather-icons.min.css"/>
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css"/>
+</head>
+<body>
+    <div class="search">
+        <input type="text" class="search-bar" placeholder="Input name of City"/>
+        <div class="search-results-dropdown">
+            <!-- <div class="search-result"><i class="fi fi-se"></i> Sweden</div>
+            <div class="search-result"><i class="fi fi-de"></i> Deutchland</div>
+            <div class="search-result"><i class="fi fi-gb"></i> Great Britain</div> -->
+        </div>
+    </div>
+    <div class="weather">
+        <!-- <div class="weather-card weather-card-day">
+            <p class="weather-text-big">Lund<i class="fi fi-se weather-flag"></i></p>
+            <div class="weather-top">
+                <div>
+                    <p class="weather-text-small">2023-12-08</p>
+                    <p class="weather-text-small">10:27 <span class="weather-time-zone">CET</span></p>
+                    <p class="weather-text-big">-23&deg;C</p>
+                    <p class="weather-text-small">Rel Hum: 96%</p>
+                </div>
+                <div>
+                    <p class="weather-text-big"><i class="wi wi-rain"></i></p>
+                    <p class="weather-text-small">Rain: 231.4mm</p>
+                    <p class="weather-text-small">Snow: 0mm</p>
+                    <p class="weather-text-small">Wind: 15.9 km/h <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;194&deg; SSW</p>
+                </div>
+            </div>
+            <hr>
+            <div class="weather-hour weather-scroll">
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>00:00</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>-1&deg;</p>
+                </div>
+            </div>
+            <hr>
+            <div class="weather-week weather-scroll">
+                <div class="weather-small-info">
+                    <p>Dec 12</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>13&deg;  -12&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>Dec 13</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>3&deg;  -2&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>Dec 14</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>3&deg;  -2&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>Dec 15</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>3&deg;  -2&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>Dec 16</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>3&deg;  -2&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>Dec 17</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>3&deg;  -2&deg;</p>
+                </div>
+                <div class="weather-small-info">
+                    <p>Dec 18</p>
+                    <p><i class="wi wi-rain"></i></p>
+                    <p>3&deg;  -2&deg;</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="controls">
+        <p>Click a search result to add the location</p>
+        <p>CTRL + Click a card to remove it</p>
+    </div>
+<script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+html {
+    height: 100%;
+    background-image: linear-gradient(16deg,#192437 0%, #0f1c33 15%, #3f7083 50%, #a7d7eb 93%, #fff200 100%);
+    background-repeat: no-repeat;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+p {
+    margin: 5px 0;
+}
+
+.search {
+    margin-top: 14vh;
+    text-align: center;
+}
+.search-bar {
+    margin: auto;
+    padding: 4px;
+    width: 33vw;
+    height: 20pt;
+    font-size: 16pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+.search-results-dropdown {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    left: 33.5%;
+    background-color: white;
+    width: 24vw;
+    text-align: left;
+    border: 1px solid black;
+    font-size: 16pt;
+}
+.search-result {
+    width: 24vw;
+}
+.search-result:hover {
+    background-color: #002a77;
+    cursor: pointer;
+    color: white;
+}
+.search-result-text {
+    margin: 0 16pt;
+}
+
+.weather {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: safe center;
+    gap: 16px;
+    overflow-x: auto;
+}
+
+.weather-card { /* Whole card */
+    /* Force aspect ratio? */
+    border-radius: 16px;
+    width: 400px;
+    height: 490px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.weather-card-day { /* If sun is up */
+    background-color: skyblue;
+    color: black;
+    border: 4px solid black;
+}
+
+.weather-card-night { /* If sun is down */
+    background-color: #002a77; /* Marine Blue */
+    color: white;
+    border: 4px solid white;
+}
+
+.weather-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.weather-flag {
+    position: relative;
+    bottom: 16pt;
+    font-size: 16pt;
+}
+
+.weather-text-huge {
+    font-size: 96pt;
+    text-align: right;
+}
+
+.weather-text-big { /* City and main Temp */
+    font-size: 48pt;
+    font-weight: bold;
+}
+
+.weather-text-small { /* For all other text */
+    font-size: 12pt;
+}
+
+.weather-icon-small {
+    font-size: 16pt;
+    margin: 0;
+}
+
+.weather-time-zone { /* Time zone style */
+    opacity: 50%;
+}
+
+.weather-hour { /* Hourly forecast box */
+    display: flex;
+    flex-direction: row;
+    overflow: none;
+    margin: 0 5px;
+    gap: 3px;
+}
+
+.weather-week { /* Weekly forecast box */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 1;
+    gap: 5px;
+    margin: 0 5px;
+    overflow: hidden;
+    position: relative;
+    height: 90px;
+}
+
+.weather-scroll {
+    overflow: hidden;
+}
+
+.weather-small-info { /* Small info card for hourly and weekly boxes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 20%;
+    border-radius: 5px;
+    float: left;
+    width: 80px;
+    height: 85px;
+    font-size: 10pt;
+}
+
+.weather-small-day {
+    border: 1px solid black;
+}
+.weather-small-night {
+    border: 1px solid white;
+}
+
+.weather-hr-day {
+    border: 0;
+    height: 1px;
+    position: relative;
+    margin: 0.5em 0;
+    background: radial-gradient(ellipse at center, #00000077 0%, #00000000 75%);
+}
+.weather-hr-night {
+    border: 0;
+    height: 1px;
+    position: relative;
+    margin: 0.5em 0;
+    background: radial-gradient(ellipse at center, #FFFFFF77 0%, #FFFFFF00 75%);
+}
+
+.controls {
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    font-size: 16pt;
+    color: white;
+}
+
+@media (max-width:961px) {
+    .weather-scroll {
+        overflow: scroll;
+    }
+}

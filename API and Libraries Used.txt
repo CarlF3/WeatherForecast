@@ -1,0 +1,11 @@
+Weather:
+https://open-meteo.com/en/docs
+
+Geocoding:
+https://open-meteo.com/en/docs/geocoding-api
+
+Flags:
+https://github.com/lipis/flag-icons
+
+Weather Icons:
+https://github.com/erikflowers/weather-icons
